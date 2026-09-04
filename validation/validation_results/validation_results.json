@@ -1,0 +1,438 @@
+{
+  "generated_at": "2026-08-17T20:42:27",
+  "overall_result": "PASS",
+  "sections": {
+    "1_bronze_layer": {
+      "status": "PASS",
+      "datasets": {
+        "donors": {
+          "status": "PASS",
+          "row_count": 200,
+          "null_ingested_at": 0,
+          "reason": null
+        },
+        "blood_banks": {
+          "status": "PASS",
+          "row_count": 20,
+          "null_ingested_at": 0,
+          "reason": null
+        },
+        "blood_inventory": {
+          "status": "PASS",
+          "row_count": 107,
+          "null_ingested_at": 0,
+          "reason": null
+        },
+        "donation_camps": {
+          "status": "PASS",
+          "row_count": 15,
+          "null_ingested_at": 0,
+          "reason": null
+        },
+        "donations": {
+          "status": "PASS",
+          "row_count": 2020,
+          "null_ingested_at": 0,
+          "reason": null
+        }
+      }
+    },
+    "2_data_quality": {
+      "status": "PASS",
+      "missing_values": {
+        "status": "PASS",
+        "datasets": {
+          "donors": {
+            "status": "PASS",
+            "label": "Donors",
+            "row_count": 200,
+            "columns": {
+              "donor_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_group": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "city": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "registration_date": {
+                "status": "PASS",
+                "null_count": 0
+              }
+            }
+          },
+          "blood_banks": {
+            "status": "PASS",
+            "label": "Blood Banks",
+            "row_count": 20,
+            "columns": {
+              "blood_bank_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_bank_name": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "city": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "state": {
+                "status": "PASS",
+                "null_count": 0
+              }
+            }
+          },
+          "blood_inventory": {
+            "status": "PASS",
+            "label": "Blood Inventory",
+            "row_count": 107,
+            "columns": {
+              "inventory_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_bank_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_group": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "available_units": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "last_updated": {
+                "status": "PASS",
+                "null_count": 0
+              }
+            }
+          },
+          "donations": {
+            "status": "PASS",
+            "label": "Donations",
+            "row_count": 2020,
+            "columns": {
+              "donation_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "donor_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_bank_id": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "blood_group": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "donation_date": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "units_donated": {
+                "status": "PASS",
+                "null_count": 0
+              },
+              "donation_status": {
+                "status": "PASS",
+                "null_count": 0
+              }
+            }
+          }
+        }
+      },
+      "blood_group_checks": {
+        "donors": {
+          "status": "PASS",
+          "label": "Donor Blood Group",
+          "invalid_count": 0,
+          "sample_invalid_values": []
+        },
+        "inventory": {
+          "status": "PASS",
+          "label": "Inventory Blood Group",
+          "invalid_count": 0,
+          "sample_invalid_values": []
+        },
+        "donations": {
+          "status": "PASS",
+          "label": "Donation Blood Group",
+          "invalid_count": 0,
+          "sample_invalid_values": []
+        }
+      },
+      "donation_quantity_check": {
+        "status": "PASS",
+        "null_units": 0,
+        "zero_units": 0,
+        "negative_units": 0,
+        "flagged_for_review_unrealistic_units": 0
+      },
+      "donor_eligibility_check": {
+        "status": "PASS",
+        "out_of_range_age": 0,
+        "invalid_eligibility_status": 0,
+        "blood_group_check": {
+          "status": "PASS",
+          "label": "Donor Blood Group",
+          "invalid_count": 0,
+          "sample_invalid_values": []
+        },
+        "last_donation_before_registration": 0
+      }
+    },
+    "3_duplicate_checks": {
+      "status": "PASS",
+      "checks": {
+        "donor_id": {
+          "status": "PASS",
+          "label": "Donor Duplicate Check",
+          "key_columns": [
+            "donor_id"
+          ],
+          "duplicate_count": 0
+        },
+        "blood_bank_id": {
+          "status": "PASS",
+          "label": "Blood Bank Duplicate Check",
+          "key_columns": [
+            "blood_bank_id"
+          ],
+          "duplicate_count": 0
+        },
+        "inventory_id": {
+          "status": "PASS",
+          "label": "Inventory Duplicate Check",
+          "key_columns": [
+            "inventory_id"
+          ],
+          "duplicate_count": 0
+        },
+        "camp_id": {
+          "status": "PASS",
+          "label": "Camp Duplicate Check",
+          "key_columns": [
+            "camp_id"
+          ],
+          "duplicate_count": 0
+        },
+        "donation_id": {
+          "status": "PASS",
+          "label": "Donation Duplicate Check",
+          "key_columns": [
+            "donation_id"
+          ],
+          "duplicate_count": 0
+        }
+      }
+    },
+    "4_foreign_key_checks": {
+      "status": "PASS",
+      "invalid_donor_references": 0,
+      "invalid_blood_bank_references": 0,
+      "invalid_camp_references": 0,
+      "invalid_inventory_blood_bank_references": 0
+    },
+    "5_silver_layer": {
+      "status": "PASS",
+      "duplicate_check": {
+        "status": "PASS",
+        "label": "Silver Donations Duplicate Check",
+        "key_columns": [
+          "donation_id"
+        ],
+        "duplicate_count": 0
+      },
+      "join_check": {
+        "before_join_donations": 2015,
+        "after_enrichment_join": 2015,
+        "reason": null
+      },
+      "missing_required_columns": []
+    },
+    "6_inventory_validation": {
+      "status": "PASS",
+      "negative_units": 0,
+      "orphan_blood_bank_references": 0,
+      "total_available_units": 5400,
+      "available_units_by_blood_group": {
+        "A+": 1337,
+        "A-": 351,
+        "AB+": 339,
+        "AB-": 104,
+        "B+": 1699,
+        "B-": 402,
+        "O+": 1030,
+        "O-": 138
+      },
+      "available_units_by_blood_bank_top5": {
+        "BB010": 438,
+        "BB018": 409,
+        "BB012": 379,
+        "BB008": 361,
+        "BB017": 334
+      }
+    },
+    "7_rare_blood_availability": {
+      "status": "PASS",
+      "rare_blood_groups": {
+        "O-": {
+          "total_units": 138,
+          "centers_available": 10,
+          "cities_available": 6,
+          "status": "AVAILABLE"
+        },
+        "AB-": {
+          "total_units": 104,
+          "centers_available": 9,
+          "cities_available": 7,
+          "status": "AVAILABLE"
+        },
+        "B-": {
+          "total_units": 402,
+          "centers_available": 12,
+          "cities_available": 7,
+          "status": "AVAILABLE"
+        },
+        "A-": {
+          "total_units": 351,
+          "centers_available": 11,
+          "cities_available": 7,
+          "status": "AVAILABLE"
+        }
+      },
+      "invalid_configured_groups": []
+    },
+    "8_shortage_detection": {
+      "status": "PASS",
+      "boundary_cases": [
+        {
+          "units": 0,
+          "expected": "OUT_OF_STOCK",
+          "actual": "OUT_OF_STOCK",
+          "status": "PASS"
+        },
+        {
+          "units": 4,
+          "expected": "CRITICAL",
+          "actual": "CRITICAL",
+          "status": "PASS"
+        },
+        {
+          "units": 5,
+          "expected": "LOW",
+          "actual": "LOW",
+          "status": "PASS"
+        },
+        {
+          "units": 9,
+          "expected": "LOW",
+          "actual": "LOW",
+          "status": "PASS"
+        },
+        {
+          "units": 10,
+          "expected": "AVAILABLE",
+          "actual": "AVAILABLE",
+          "status": "PASS"
+        },
+        {
+          "units": 11,
+          "expected": "AVAILABLE",
+          "actual": "AVAILABLE",
+          "status": "PASS"
+        }
+      ]
+    },
+    "9_gold_layer": {
+      "status": "PASS",
+      "gold_datasets": {
+        "status": "PASS",
+        "datasets": {
+          "daily_donation_summary": {
+            "status": "PASS",
+            "row_count": 947
+          },
+          "monthly_donation_summary": {
+            "status": "PASS",
+            "row_count": 66
+          },
+          "blood_group_distribution": {
+            "status": "PASS",
+            "row_count": 8
+          },
+          "rare_blood_availability": {
+            "status": "PASS",
+            "row_count": 44
+          },
+          "rare_blood_summary": {
+            "status": "PASS",
+            "row_count": 4
+          },
+          "blood_shortage_report": {
+            "status": "PASS",
+            "row_count": 4
+          },
+          "blood_bank_rare_stock": {
+            "status": "PASS",
+            "row_count": 44
+          },
+          "city_blood_availability": {
+            "status": "PASS",
+            "row_count": 29
+          },
+          "blood_bank_performance": {
+            "status": "PASS",
+            "row_count": 20
+          },
+          "donation_camp_performance": {
+            "status": "PASS",
+            "row_count": 15
+          },
+          "donor_summary": {
+            "status": "PASS",
+            "row_count": 200
+          },
+          "rare_donor_summary": {
+            "status": "PASS",
+            "row_count": 4
+          }
+        }
+      },
+      "reconciliation": {
+        "status": "PASS",
+        "silver_completed_donation_units": 2312,
+        "gold_blood_group_distribution_units": 2312,
+        "donation_units_match": true,
+        "rare_blood_inventory_mismatches": {}
+      }
+    },
+    "10_streaming_validation": {
+      "status": "PASS",
+      "landing_directory_exists": true,
+      "landing_json_file_count": 15,
+      "checkpoint_directory_exists": true,
+      "bronze_streaming_record_count": 15,
+      "missing_required_columns": [],
+      "duplicate_check": {
+        "status": "PASS",
+        "label": "Streaming Donation Duplicate Check",
+        "key_columns": [
+          "donation_id"
+        ],
+        "duplicate_count": 0
+      }
+    }
+  }
+}

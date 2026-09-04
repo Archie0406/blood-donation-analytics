@@ -1,0 +1,13 @@
+{
+  "donation_id": "LIVE-DONATION-000001",
+  "donor_id": "DON0022",
+  "blood_bank_id": "BB016",
+  "camp_id": "CAMP014",
+  "donation_date": "2026-08-12",
+  "blood_group": "A-",
+  "units_donated": 1,
+  "donation_status": "Completed",
+  "event_time": "2026-08-12T20:28:14",
+  "source": "live_donation_simulator",
+  "event_type": "blood_donation"
+}

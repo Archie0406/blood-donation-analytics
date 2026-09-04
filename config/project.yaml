@@ -1,0 +1,56 @@
+# Enterprise Rare Blood Type Availability Analytics
+# Project-wide configuration — single source of truth for domain values.
+#
+# Every script in this project that needs "what counts as rare", "what
+# blood groups exist", "what component types exist" etc. loads these
+# values via config/config_loader.py instead of hard-coding its own copy.
+
+blood_groups:
+  valid:
+    - "A+"
+    - "A-"
+    - "B+"
+    - "B-"
+    - "AB+"
+    - "AB-"
+    - "O+"
+    - "O-"
+  # Project-defined analytics classification, NOT a medical rarity
+  # guideline — see README / DEMONSTRATION.md for the disclaimer.
+  rare:
+    - "O-"
+    - "AB-"
+    - "B-"
+    - "A-"
+
+component_types:
+  valid:
+    - "RBC"
+    - "Plasma"
+    - "Platelets"
+  # Approximate real-world shelf life in days, used for expiry simulation
+  # and classification. These are simplified, illustrative values for a
+  # demo project, not clinical storage guidance.
+  shelf_life_days:
+    RBC: 42
+    Plasma: 365
+    Platelets: 5
+
+donation_statuses:
+  valid:
+    - "Completed"
+    - "Cancelled"
+    - "Rejected"
+    - "Pending"
+  contributing:
+    - "Completed"
+
+transaction_types:
+  - "DONATION"
+  - "ISSUE"
+  - "TRANSFER_IN"
+  - "TRANSFER_OUT"
+  - "EXPIRY"
+  - "ADJUSTMENT"
+
+random_seed: 42

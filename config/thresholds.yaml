@@ -1,0 +1,59 @@
+# Enterprise Rare Blood Type Availability Analytics
+# Business-rule thresholds — single source of truth.
+#
+# These are DEMO/SYNTHETIC thresholds for this project only, not real
+# clinical or blood-bank operational guidelines. Every value here is used
+# by exactly one authoritative code path (pipeline/09_inventory_transaction_engine.py
+# and pipeline/08_gold_aggregate.py) rather than being re-declared inline.
+
+# Legacy simple unit-count thresholds, still used by pipeline/08_gold_aggregate.py
+# for backward compatibility with the original (pre-upgrade) Gold layer.
+legacy_availability_thresholds:
+  critical_max_units: 5
+  low_max_units: 10
+  # available_units == 0            -> OUT_OF_STOCK
+  # available_units <= critical_max -> CRITICAL
+  # available_units <= low_max      -> LOW
+  # else                             -> AVAILABLE
+
+# New transaction-driven / demand-aware model
+# (pipeline/09_inventory_transaction_engine.py)
+expiry:
+  expiring_soon_days: 3   # units expiring within this many days -> EXPIRING_SOON
+
+coverage:
+  # coverage_days = available_units / average_daily_demand
+  # A component/bank/group with no recorded demand is treated as
+  # "no demand data" rather than infinite coverage (see shortage scoring).
+  minimum_demand_floor: 0.1   # avoids divide-by-near-zero blowing up coverage_days
+
+shortage_scoring:
+  # shortage_score (0-100, higher = more urgent) is a weighted sum of four
+  # sub-scores, each independently scaled to 0-100 before weighting.
+  # See pipeline/09_inventory_transaction_engine.py::calculate_shortage_score
+  # for the exact, documented formula.
+  weights:
+    inventory_level: 0.40
+    coverage_days: 0.30
+    expiry_risk: 0.15
+    donation_trend: 0.15
+
+  # coverage_days sub-score bands (fewer days = higher urgency)
+  coverage_days_critical_below: 1.0
+  coverage_days_low_below: 3.0
+  coverage_days_healthy_above: 7.0
+
+  # Final 0-100 shortage_score -> priority_level classification
+  bands:
+    healthy_max: 20
+    monitor_max: 40
+    low_max: 60
+    critical_max: 80
+    # 81-100 -> EMERGENCY
+
+recommended_actions:
+  EMERGENCY: "Urgent donor mobilization and inter-bank transfer required immediately."
+  CRITICAL: "Initiate transfer from a nearby bank with surplus and launch a targeted donation campaign."
+  LOW: "Schedule a targeted donation campaign within the next few days."
+  MONITOR: "Continue monitoring; no immediate action required."
+  HEALTHY: "No action required."

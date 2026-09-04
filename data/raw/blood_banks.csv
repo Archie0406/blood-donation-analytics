@@ -1,0 +1,31 @@
+blood_bank_id,blood_bank_name,city,state,address,latitude,longitude,storage_capacity,operating_status
+BB001,Sanjeevani Blood Bank Nagpur,Nagpur,Maharashtra,"799
+Nayar Marg, Nagpur, Maharashtra - 903373",21.144427,79.060854,120,Active
+BB002,LifeLine Blood Center - Delhi,Delhi,Delhi,"52, Kala Chowk, Delhi, Delhi - 632351",28.731187,77.136012,319,Active
+BB003,Amrit Blood Bank Bengaluru,Bengaluru,Karnataka,"H.No. 54
+Majumdar, Bengaluru, Karnataka - 237414",12.981325,77.560025,142,Active
+BB004,Red Hope Blood Bank Ahmedabad,Ahmedabad,Gujarat,"31/36, Khosla Chowk, Ahmedabad, Gujarat - 856215",23.016267,72.562486,396,Active
+BB005,Amrit Blood Bank Chennai,Chennai,Tamil Nadu,"77/014
+Ravel Ganj, Chennai, Tamil Nadu - 398768",13.107939,80.29908,169,Active
+BB006,Delhi Regional Blood Center,Delhi,Delhi,"H.No. 95, Wali Chowk, Delhi, Delhi - 975679",28.673502,77.120331,342,Temporarily Closed
+BB007,Chennai Community Blood Bank,Chennai,Tamil Nadu,"85
+Setty Path, Chennai, Tamil Nadu - 915922",13.070887,80.273446,132,Active
+BB008,Red Hope Blood Bank Ahmedabad,Ahmedabad,Gujarat,"H.No. 43
+Hans Zila, Ahmedabad, Gujarat - 362147",22.977718,72.569459,240,Active
+BB009,HopeLine Blood Bank Pune,Pune,Maharashtra,"H.No. 823
+Sule Ganj, Pune, Maharashtra - 992512",18.482868,73.815088,132,Active
+BB010,Red Hope Blood Bank Kolkata,Kolkata,West Bengal,"98/941
+Minhas Ganj, Kolkata, West Bengal - 971415",22.566347,88.408541,163,Active
+BB011,Bengaluru CityCare Blood Bank,Bengaluru,Karnataka,"H.No. 24, Walla Nagar, Bengaluru, Karnataka - 535050",12.926926,77.594801,170,Active
+BB012,Sanjeevani Blood Bank Pune,Pune,Maharashtra,"H.No. 00, Master Circle, Pune, Maharashtra - 335445",18.473219,73.899783,479,Active
+BB013,Red Hope Blood Bank Bengaluru,Bengaluru,Karnataka,"71/094, Srinivas Chowk, Bengaluru, Karnataka - 244283",12.92543,77.63634,291,Active
+BB014,Nashik Regional Blood Center,Nashik,Maharashtra,"H.No. 20
+Sridhar Road, Nashik, Maharashtra - 570392",20.009035,73.830386,59,Active
+BB015,HopeLine Blood Bank Nashik,Nashik,Maharashtra,"H.No. 671, Bera, Nashik, Maharashtra - 862560",20.008388,73.782125,447,Active
+BB016,LifeLine Blood Center - Delhi,Delhi,Delhi,"941, Dani Ganj, Delhi, Delhi - 150068",28.677944,77.116395,368,Active
+BB017,Pune Regional Blood Center,Pune,Maharashtra,"99/38
+Seshadri Marg, Pune, Maharashtra - 725726",18.524005,73.869895,344,Active
+BB018,Nashik Community Blood Bank,Nashik,Maharashtra,"H.No. 96
+Bhasin Road, Nashik, Maharashtra - 550089",19.947656,73.775082,342,Active
+BB019,HopeLine Blood Bank Pune,Pune,Maharashtra,"341, Khatri Street, Pune, Maharashtra - 478120",18.477168,73.859306,309,Active
+BB020,HopeLine Blood Bank Kolkata,Kolkata,West Bengal,"12/06, Singhal Chowk, Kolkata, West Bengal - 121322",22.561645,88.360914,375,Active

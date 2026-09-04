@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spark
+spark-warehouse/
+checkpoints/
+checkpoint/
+**/checkpoints/
+**/checkpoint/
+
+# Generated Spark output
+**/*.parquet
+**/parquet/
+**/output/
+**/outputs/
+
+# Logs
+*.log
+
+# Environment/secrets
+.env
+.env.*
+!.env.example

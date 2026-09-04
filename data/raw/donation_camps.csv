@@ -1,0 +1,16 @@
+camp_id,camp_name,organizer,city,state,camp_date,location,expected_donors
+CAMP001,Rotary Community Blood Camp,Rotary Club,Pune,Maharashtra,2024-07-01,"Bali Road Grounds, Pune",120
+CAMP002,Rotary Lifesaver Camp,Rotary International,Nagpur,Maharashtra,2026-05-04,,25
+CAMP003,Youth Donate & Save Camp,Youth Welfare Association,Kolkata,West Bengal,2025-03-10,"Setty Road Grounds, Kolkata",78
+CAMP004,City Donate & Save Camp,City Hospital Trust,Bengaluru,Karnataka,2024-06-07,"Kaur Zila Grounds, Bengaluru",48
+CAMP005,Red Donate & Save Camp,Red Cross Society,Ahmedabad,Gujarat,2026-02-23,"Hora Road Grounds, Ahmedabad",24
+CAMP006,City Lifesaver Camp,City Hospital Trust,Pune,Maharashtra,2024-04-13,"Contractor Marg Grounds, Pune",134
+CAMP007,Jaycees Blood Donation Drive,Jaycees Charitable Trust,Nagpur,Maharashtra,2026-01-28,,132
+CAMP008,City Annual Blood Donation Camp,City Hospital Trust,Nagpur,Maharashtra,2026-02-11,"Lata Street Grounds, Nagpur",34
+CAMP009,Rotary Annual Blood Donation Camp,Rotary Club,Delhi,Delhi,2024-08-27,"Bora Street Grounds, Delhi",101
+CAMP010,Jaycees Annual Blood Donation Camp,Jaycees Charitable Trust,Bengaluru,Karnataka,2024-08-30,"Gandhi Nagar Grounds, Bengaluru",56
+CAMP011,Rotary Lifesaver Camp,Rotary International,Hyderabad,Telangana,2024-11-03,"Mani Road Grounds, Hyderabad",64
+CAMP012,College Annual Blood Donation Camp,College Alumni Association,Chennai,Tamil Nadu,2024-02-18,"Dash Chowk Grounds, Chennai",117
+CAMP013,Rotary Community Blood Camp,Rotary International,Hyderabad,Telangana,2025-02-22,"Modi Chowk Grounds, Hyderabad",116
+CAMP014,Rotary Annual Blood Donation Camp,Rotary Club,Chennai,Tamil Nadu,2024-09-03,"Magar Marg Grounds, Chennai",96
+CAMP015,Rotary Donate & Save Camp,Rotary Club,Mumbai,Maharashtra,2025-07-29,"Zacharia Circle Grounds, Mumbai",126

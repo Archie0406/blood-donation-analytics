@@ -1,0 +1,12 @@
+# Enterprise Rare Blood Type Availability Analytics — Dependencies
+#
+# Tested with Python 3.12 and OpenJDK 21 (PySpark requires a JDK 8/11/17/21
+# runtime; it is not a Python package and must be installed separately).
+
+pyspark>=4.0.0
+faker>=40.0.0
+pandas>=2.0.0
+pyarrow>=15.0.0
+streamlit>=1.40.0
+plotly>=6.0.0
+pytest>=8.0.0
