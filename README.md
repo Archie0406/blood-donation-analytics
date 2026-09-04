@@ -1,3 +1,9 @@
+## 🚀 Live Dashboard
+
+🔗 **[View Live Dashboard](https://blood-donation-analytics-axvoo4ayhj93whg95zdlrf.streamlit.app/)**
+
+The interactive dashboard is deployed using Streamlit Cloud.
+
 # 🩸 Rare Blood Type Availability Analytics Using PySpark Medallion Architecture
 
 An end-to-end, laptop-friendly data engineering project that ingests, cleans, enriches, and analyzes blood donation and inventory data — both historical (batch) and simulated real-time (streaming) — to answer one central question:
