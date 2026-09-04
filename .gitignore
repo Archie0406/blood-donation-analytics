@@ -25,10 +25,22 @@ checkpoint/
 **/checkpoint/
 
 # Generated Spark output
-**/*.parquet
 **/parquet/
 **/output/
 **/outputs/
+
+# Ignore all Parquet files by default
+**/*.parquet
+
+# Dashboard Gold datasets
+!data/gold/
+!data/gold/*/
+!data/gold/*/*.parquet
+
+# Bronze streaming data used by Live Feed
+!data/bronze/
+!data/bronze/streaming_donations/
+!data/bronze/streaming_donations/*.parquet
 
 # Logs
 *.log
